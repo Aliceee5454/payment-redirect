@@ -12,9 +12,19 @@
 
     <!-- Custom CSS -->
     <style>
+        .site-header {
+            background: #2a7de1;
+            padding: 20px 0;
+            position: relative;
+        }
         .navbar-brand img {
-            height: 60px;
-            margin-right: 10px;
+            max-height: 60px;
+        }
+        /* Adjust the brand name color and font */
+        .navbar-brand span {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 500;
         }
         .card {
             max-width: 500px;
@@ -23,16 +33,22 @@
     </style>
 </head>
 <body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <!-- Logo and brand name -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="img/logo.png" alt="Company Logo" class="img-fluid" style="max-height: 60px;"/>
-            <span class="ms-2">PAX Technology</span>
-        </a>
+
+<nav class="site-header w-100 has-logo" role="banner">
+    <div class="container position-relative">
+        <div class="row align-items-center w-100">
+            <!-- Branding Section -->
+            <div class="col-12 col-lg-2">
+                <div class="site-branding header-logo">
+                    <a class="navbar-brand d-flex align-items-center">
+                        <img src="https://www.pax.us/wp-content/uploads/2023/01/PAX-Logo-Nav.svg" class="logo img-fluid" width="177" height="51" alt="PAX Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>
+
 
 <!-- MAIN CONTENT -->
 <div class="container">
@@ -50,3 +66,18 @@
 </script>
 </body>
 </html>
+
+
+<!--<header id="masthead" class="site-header w-100 has-logo has-menu" role="banner">-->
+<!--    <div class="container position-relative">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-6 col-lg-2">-->
+<!--                <div class="site-branding header-logo">-->
+<!--                    <a href="https://www.pax.us/" rel="home">-->
+<!--                        <img src="https://www.pax.us/wp-content/uploads/2023/01/PAX-Logo-Nav.svg" class="logo" width="177" height="51" alt="PAX Logo">-->
+<!--                    </a>-->
+<!--                </div>&lt;!&ndash; .site-branding &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
